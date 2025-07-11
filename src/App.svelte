@@ -2,9 +2,10 @@
     let name = "sita vemuri";
     let favoriteNumber = "🎱";
     let bio = "i'm an incoming college freshman and i love to code. you can find out more about me below!";
-    let facts = ["i've never lost a fight against a hippopotamus. 🦛", "i play the violin. 🎻", "i was once TIME's person of the year (2006). 📰", "i have two dogs. 🐶"];
+    let facts = ["i've never lost a fight against a hippopotamus. 🦛", "i play the violin. 🎻", "i was once time's person of the year (2006). 📰", "i have two dogs. 🐶"];
 
     import ImageCard from "./lib/ImageCard.svelte";
+    import CodingProject from "./lib/CodingProject.svelte";
 
     let cardData = [
         {
@@ -38,6 +39,29 @@
             description: "my second dog. she's really brave but thinks she's still a tiny puppy!",
         },
     ];
+
+    let projectData = [
+        {
+            title: "friday dinner",
+            url: "https://pitabread8.github.io/Friday-Dinner",
+            description: "taught myself html, css, & vanilla js to make this project 4 years ago. you can learn about alternative voting systems and interact with them in a simulator!",
+        },
+        {
+            title: "recipe raiders",
+            url: "https://github.com/bsampada/RecipeRaiders2",
+            description: "i made this project with two lovely girls as part of the kwk mobile app development program in 2023. it was an ios app designed to gamify cooking and inspire people to prepare recipes from around the world while learning about different cultures!",
+        },
+        {
+            title: "plutus",
+            url: "https://plutus-project.vercel.app",
+            description: "with credit cards and tap to pay, money starts to feel like 0s and 1s and it can be easy to lose sight of just how much you're buying. plutus is for tracking all your spending and ensuring you can stay within budget!",
+        },
+        {
+            title: "up next",
+            url: "https://www.columbia.edu/",
+            description: "✨ cs @ columbia! ✨",
+        },
+    ];
 </script>
 
 <div class="container">
@@ -48,7 +72,7 @@
 </div>
 
 <div class="container">
-    <h2>some fun facts</h2>
+    <h2 class="text-2xl">some fun facts</h2>
     <div class="facts">
         {#each facts as fact}
             <div class="fact">{fact}</div>
@@ -57,7 +81,16 @@
 </div>
 
 <div class="container">
-    <h2>some of my favorite things</h2>
+    <h2 class="text-2xl">snippets of my coding journey</h2>
+    <div>
+        {#each projectData as { title, url, description }}
+            <CodingProject {title} {url} {description} />
+        {/each}
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="text-2xl">some of my favorite things</h2>
     <div class="card-container grid grid-cols-3 gap-8">
         {#each cardData as { image, title, description }}
             <ImageCard {image} {title} {description} />
