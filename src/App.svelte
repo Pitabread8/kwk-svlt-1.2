@@ -9,32 +9,32 @@
 
     let cardData = [
         {
-            image: "/images/pic-1.jpeg",
+            image: "images/pic-1.jpeg",
             title: "film photography",
             description: "shooting, developing, and printing film. the process is soo rewarding!",
         },
         {
-            image: "/images/pic-2.jpeg",
+            image: "images/pic-2.jpeg",
             title: "travel",
             description: "learning more about the world and the different places and cultures within it.",
         },
         {
-            image: "/images/pic-3.jpeg",
+            image: "images/pic-3.jpeg",
             title: "crochet",
             description: "a relaxing, satisfying hobby. still trying to get better at it!",
         },
         {
-            image: "/images/pic-4.jpeg",
+            image: "images/pic-4.jpeg",
             title: "coco",
             description: "my first dog. she's really shy and a bit grumpy!",
         },
         {
-            image: "/images/pic-5.jpeg",
+            image: "images/pic-5.jpeg",
             title: "digital photography",
             description: "taking photos, capturing the stories around me.",
         },
         {
-            image: "/images/pic-6.jpeg",
+            image: "images/pic-6.jpeg",
             title: "maple",
             description: "my second dog. she's really brave but thinks she's still a tiny puppy!",
         },
